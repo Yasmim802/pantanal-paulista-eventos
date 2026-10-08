@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantanal Paulista - Experiências e Eventos</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO / MENU (igual em todas as páginas) -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">Pantanal Paulista</a>
+
+      <nav class="nav-principal">
+        <ul class="nav-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="descubra.html">Descubra</a></li>
+          <li><a href="experiencias.html" class="ativo">Experiências e Eventos</a></li>
+          <li><a href="empresas.html">Para Empresas</a></li>
+        </ul>
+      </nav>
+
+      <a href="descubra.html#planeje-visita" class="btn btn-primario btn-header">Planeje sua visita</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         EXPERIÊNCIAS
+         Título da página + dois blocos imagem/texto
+    ======================================================= -->
+    <section class="secao-pagina-interna secao-sem-respiro-inferior">
+      <div class="container">
+        <h1 class="titulo-pagina">Experiências e Eventos</h1>
+        <p class="subtitulo-pagina">Roteiros, trilhas, pesca esportiva e esportes náuticos para todos os perfis de viajante, além da agenda de feiras, festivais e cursos da região.</p>
+      </div>
+
+      <!-- Bloco com imagem à esquerda e texto à direita -->
+      <div class="container">
+        <div class="container-duas-colunas bloco-experiencia">
+          <img src="imagens/pesca esportiva.png" alt="250px" height="250px">
+          <div class="experiencia-texto">
+            <h2>Circuito de Pesca Esportiva</h2>
+            <p>Roteiros guiados de pesca nos rios da região, com estrutura para iniciantes e competidores.</p>
+            <a href="#" class="btn btn-primario">Saiba mais →</a>
+          </div>
+        </div>
+
+        <!-- Bloco com texto à esquerda e imagem à direita: a ordem do HTML é a mesma do bloco
+             anterior (imagem, texto) e a classe bloco-invertido inverte visualmente com row-reverse -->
+        <div class="container-duas-colunas bloco-experiencia bloco-invertido">
+         <img src="imagens/esportes nauticos.png" alt="250px"height= "250px">
+          <div class="experiencia-texto">
+            <h2>Esportes Náuticos</h2>
+            <p>Stand-up paddle, caiaque e passeios de barco pelas águas calmas do Pantanal Paulista.</p>
+            <a href="#" class="btn btn-primario">Saiba mais →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mais experiências -->
+    <section class="secao-mais-experiencias">
+      <div class="container">
+        <h2 class="titulo-secao">Mais experiências</h2>
+        <div class="cartoes-flex">
+          <div class="cartao">
+        <img src="imagens/passeios guiados.png" alt="200px" height="200px">
+            <h3 class="cartao-titulo">Passeios Guiados</h3>
+          </div>
+          <div class="cartao">
+         <img src="imagens/trilhas ecologicas.png" alt="200px" height="200px">
+            <h3 class="cartao-titulo">Trilhas Ecológicas</h3>
+          </div>
+          <div class="cartao">
+            <img src="imagens/competiçoes esportivas.png" alt="200px" height="200px">
+            <h3 class="cartao-titulo">Competições Esportivas</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         EVENTOS (antiga página eventos.html)
+         Âncora #eventos: o menu, o rodapé e a página inicial
+         apontam para cá com experiencias.html#eventos
+    ======================================================= -->
+    <section id="eventos" class="secao-pagina-interna">
+      <div class="container">
+        <h2 class="titulo-pagina">Eventos e Destaques</h2>
+        <p class="subtitulo-pagina">O que está acontecendo na região: feiras, festivais gastronômicos e cursos de ecologia.</p>
+
+        <!-- Filtros de categoria (visual apenas; requer JavaScript para funcionar de fato) -->
+        <div class="filtros-eventos">
+          <button type="button" class="btn-filtro btn-filtro-ativo">Todos</button>
+          <button type="button" class="btn-filtro">Feiras</button>
+          <button type="button" class="btn-filtro">Festivais Gastronômicos</button>
+          <button type="button" class="btn-filtro">Cursos</button>
+        </div>
+
+        <!-- Lista de eventos -->
+        <ul class="lista-eventos">
+          <li class="item-evento">
+            <span class="data-evento">12-14 SET</span>
+            <div class="info-evento">
+              <h3>Feira Agropecuária Regional</h3>
+              <p>Centro de Eventos Municipal</p>
+            </div>
+          </li>
+          <li class="item-evento">
+            <span class="data-evento">20 SET</span>
+            <div class="info-evento">
+              <h3>Festival Gastronômico do Peixe</h3>
+              <p>Orla do Rio Tietê</p>
+            </div>
+          </li>
+          <li class="item-evento">
+            <span class="data-evento">05 OUT</span>
+            <div class="info-evento">
+              <h3>Curso de Ecologia e Sustentabilidade</h3>
+              <p>Centro de Visitantes</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ (igual em todas as páginas) -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-topo">
+        <p class="rodape-logo">Pantanal Paulista</p>
+      </div>
+
+      <div class="rodape-colunas">
+        <div class="rodape-coluna">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="index.html">Sobre a região</a></li>
+            <li><a href="descubra.html">Conservação</a></li>
+            <li><a href="descubra.html">Boas práticas</a></li>
+            <li><a href="experiencias.html#eventos">Notícias</a></li>
+            <li><a href="empresas.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Para o visitante</h4>
+          <ul>
+            <li><a href="descubra.html">Como chegar</a></li>
+            <li><a href="descubra.html">Quando visitar</a></li>
+            <li><a href="descubra.html">Dicas Úteis</a></li>
+            <li><a href="descubra.html#mapa">Guias e Mapas</a></li>
+            <li><a href="empresas.html">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h4>Siga e compartilhe</h4>
+          <ul>
+            <li><a href="index.html">Instagram</a></li>
+            <li><a href="index.html">Facebook</a></li>
+            <li><a href="index.html">YouTube</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna rodape-aliado">
+          <h4>Seja um aliado</h4>
+          <p>O turismo consciente transforma. Apoie a conservação da natureza.</p>
+          <a href="empresas.html" class="link-saiba-mais">Saiba como ajudar →</a>
+        </div>
+      </div>
+
+      <div class="rodape-base">
+        <p>© Pantanal Paulista - Turismo Regional</p>
+        <a href="mailto:contato@pantanalpaulista.tur.br">contato@pantanalpaulista.tur.br</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
